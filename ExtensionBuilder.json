@@ -1,0 +1,37 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "misc",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": "0.1"
+        },
+        "extensionKey": "x4etcpdf",
+        "name": "Tcpdf",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "4eyes GmbH",
+                "email": "michel@4eyes.ch",
+                "name": "Michel Georgy",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "X4e"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2015-07-22 11:03",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (16)"
+    }
+}
