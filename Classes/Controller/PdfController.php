@@ -1,5 +1,5 @@
 <?php
-namespace X4E\X4etcpdf\Controller;
+namespace X4e\X4etcpdf\Controller;
 
 /***************************************************************
  *  Copyright notice
@@ -25,34 +25,33 @@ namespace X4E\X4etcpdf\Controller;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
-
 /**
  *
  *
- * @package x4esyntheseexport
  * @license http://www.gnu.org/licenses/lgpl.html GNU Lesser General Public License, version 3 or later
  *
  */
-
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class PdfController
 {
-	/**
-	 * @var \X4E\X4etcpdf\Domain\Model\Pdf
-	 */
-	public $pdf;
+    /**
+     * @var \X4e\X4etcpdf\Domain\Model\Pdf
+     */
+    public $pdf;
 
-	/**
-	 * @var string
-	 */
-	public $filename;
+    /**
+     * @var string
+     */
+    public $filename;
 
-	public function initialize(){
-		$this->pdf = GeneralUtility::makeInstance('X4E\\X4etcpdf\\Domain\\Model\\Pdf');
-	}
+    public function initialize()
+    {
+        $this->pdf = GeneralUtility::makeInstance('X4e\\X4etcpdf\\Domain\\Model\\Pdf');
+    }
 
-	public function generatePdf(){
-		$this->pdf->Output($this->filename, 'F');
-	}
+    public function generatePdf()
+    {
+        $this->pdf->Output($this->filename, 'F');
+    }
 }
