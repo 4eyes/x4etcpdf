@@ -1,0 +1,38 @@
+{
+  "name": "x4e/x4etcpdf",
+  "type": "typo3-cms-extension",
+  "description": "PDF generator using TCPDF library",
+  "homepage": "https://www.4eyes.ch",
+  "license": ["GPL-2.0+"],
+  "keywords": ["TYPO3 CMS"],
+  "support": {
+    "issues": "https://www.4eyes.ch"
+  },
+  "authors": [
+    {
+      "name": "Michel Georgy",
+      "email": "michel@4eyes.ch",
+      "role": "Developer",
+      "homepage": "http://www.4eyes.ch"
+    }
+  ],
+  "require": {
+    "typo3/cms": "^8.7",
+    "tecnickcom/tcpdf": "^6.2"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "x4etcpdf",
+      "cms-package-dir": "{$vendor-dir}/typo3/cms"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "X4e\\X4etcpdf\\": "Classes/"
+    }
+  },
+  "replace": {
+    "x4etcpdf": "self.version",
+    "typo3-ter/x4etcpdf": "self.version"
+  }
+}
